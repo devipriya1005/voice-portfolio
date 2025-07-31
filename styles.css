@@ -6,8 +6,8 @@ body {
   }
   
   header {
-    background: #333;
-    color: slategrey;
+    background: #333333;
+    color: rgb(112, 144, 134);
     padding: 20px;
     text-align: center;
   }
@@ -26,7 +26,7 @@ body {
   
   section {
     padding: 20px;
-    background: white;
+    background: rgb(255, 255, 255);
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
