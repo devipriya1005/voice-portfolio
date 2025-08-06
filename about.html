@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <style>
+    body {
+      background: linear-gradient(to right, #f8f9fa, #e2eafc);
+    }
+
+    header {
+      background: linear-gradient(to right, #0d6efd, #6610f2);
+      color: white;
+      padding: 2rem;
+      border-radius: 15px;
+    }
+
+    header h1 {
+      animation: fadeInDown 1s ease-out;
+    }
+
+    section.bg-white {
+      transition: transform 0.3s;
+    }
+
+    section.bg-white:hover {
+      transform: scale(1.01);
+    }
+
+    .progress-bar {
+      transition: width 1.5s ease-in-out;
+    }
+
+    .tooltip-btn {
+      transition: transform 0.2s;
+    }
+
+    .tooltip-btn:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container py-5">
+
+    <!-- Header -->
+    <header class="text-center mb-5 shadow">
+      <h1 class="display-5 fw-bold"><i class="bi bi-person-circle me-2"></i>About Me</h1>
+      <p class="lead">Student | Web Developer | Cloud Enthusiast</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="d-flex justify-content-center mb-5 flex-wrap gap-3">
+      <a href="index.html" class="btn btn-outline-light bg-primary text-white"><i class="bi bi-house-door"></i> Home</a>
+      <a href="skills.html" class="btn btn-outline-light bg-success text-white"><i class="bi bi-gear"></i> Skills</a>
+      <a href="projects.html" class="btn btn-outline-light bg-warning text-dark"><i class="bi bi-kanban"></i> Projects</a>
+      <a href="contact.html" class="btn btn-outline-light bg-danger text-white"><i class="bi bi-envelope"></i> Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section class="bg-white p-4 rounded shadow-lg mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="profile.jpg" alt="Devi Priya" class="img-fluid rounded-circle border border-4 border-primary shadow" style="max-width: 200px;">
+        </div>
+        <div class="col-md-8">
+          <p class="lead">
+            Hi! I'm <strong>Devi Priya</strong>. I'm currently pursuing my Bachelor's degree in Information Technology. 
+            I'm passionate about <span class="badge bg-info text-dark">Full-Stack Web Development</span>, 
+            <span class="badge bg-warning text-dark">AWS Cloud</span>, and 
+            <span class="badge bg-success">AI Tools</span>.
+          </p>
+          <p>
+            I recently completed a project titled <em class="text-primary">Trivia Game Leaderboard</em> using AWS EC2, S3, and RDS. 
+            It helped me gain hands-on experience in deploying scalable apps, integrating databases, and tracking game scores.
+          </p>
+          <p>
+            I'm also working on a <strong class="text-success">Voice-Controlled Portfolio</strong> — a smart project using modern web technologies!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Progress -->
+    <section class="bg-white p-4 rounded shadow mb-5">
+      <h4 class="mb-4"><i class="bi bi-bar-chart-steps me-2 text-primary"></i>Current Learning Progress</h4>
+      <div class="mb-3">
+        <label class="fw-semibold">HTML</label>
+        <div class="progress">
+          <div class="progress-bar bg-primary" style="width: 90%;">90%</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="fw-semibold">CSS</label>
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width: 80%;">80%</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="fw-semibold">JavaScript</label>
+        <div class="progress">
+          <div class="progress-bar bg-warning text-dark" style="width: 70%;">70%</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="fw-semibold">AWS</label>
+        <div class="progress">
+          <div class="progress-bar bg-info text-dark" style="width: 60%;">60%</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tooltip Button -->
+    <div class="text-center">
+      <button type="button" class="btn btn-secondary tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Thanks for visiting! Feel free to explore more!">
+        Hover for Tip <i class="bi bi-lightbulb"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS Bundle + Tooltip Init -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Enable all tooltips
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipTriggerList.forEach(el => {
+      new bootstrap.Tooltip(el);
+    });
+  </script>
+</body>
+</html>

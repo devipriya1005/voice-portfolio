@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  
+  <style>
+    body {
+      background: linear-gradient(to right, #e2eafc, #f9f7f7);
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 2rem;
+      border-radius: 15px;
+    }
+
+    header h1 {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .contact-card {
+      transition: transform 0.3s;
+    }
+
+    .contact-card:hover {
+      transform: scale(1.01);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container py-5">
+
+    <!-- Header -->
+    <header class="text-center mb-5 shadow">
+      <h1 class="display-5 fw-bold"><i class="bi bi-envelope-paper-heart-fill me-2"></i>Contact Me</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="d-flex justify-content-center mb-5 flex-wrap gap-3">
+      <a href="index.html" class="btn btn-outline-light bg-primary text-white"><i class="bi bi-house-door-fill"></i> Home</a>
+      <a href="about.html" class="btn btn-outline-light bg-info text-dark"><i class="bi bi-person-fill"></i> About</a>
+      <a href="skills.html" class="btn btn-outline-light bg-success text-white"><i class="bi bi-tools"></i> Skills</a>
+      <a href="projects.html" class="btn btn-outline-light bg-warning text-dark"><i class="bi bi-kanban-fill"></i> Projects</a>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="bg-white p-4 rounded shadow contact-card">
+      <h2 class="mb-4"><i class="bi bi-chat-dots-fill text-primary me-2"></i>Get in Touch</h2>
+      <p class="lead">I’d love to hear from you! Feel free to contact me through any of the following platforms:</p>
+
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex align-items-center">
+          <i class="bi bi-envelope-fill text-danger fs-4 me-3"></i>
+          <div>
+            <strong>Email:</strong> 
+            <a href="mailto:bantupallidevi123@gmail.com" class="text-decoration-none">bantupallidevi123@gmail.com</a>
+          </div>
+        </li>
+        <li class="list-group-item d-flex align-items-center">
+          <i class="bi bi-linkedin text-primary fs-4 me-3"></i>
+          <div>
+            <strong>LinkedIn:</strong> 
+            <a href="https://www.linkedin.com/in/devipriya-bantupalli-603b2a35a" target="_blank" class="text-decoration-none">
+              linkedin.com/in/devipriya-bantupalli
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Optional Buttons -->
+      <div class="mt-4 text-center">
+        <a href="mailto:bantupallidevi123@gmail.com" class="btn btn-danger me-3" data-bs-toggle="tooltip" title="Send me an email">
+          <i class="bi bi-send-fill me-1"></i> Email Me
+        </a>
+        <a href="https://www.linkedin.com/in/devipriya-bantupalli-603b2a35a" target="_blank" class="btn btn-primary" data-bs-toggle="tooltip" title="Visit my LinkedIn profile">
+          <i class="bi bi-linkedin me-1"></i> LinkedIn
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Bootstrap JS Bundle + Tooltip Initialization -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Initialize tooltips
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
+      new bootstrap.Tooltip(el);
+    });
+  </script>
+</body>
+</html>

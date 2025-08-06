@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #f3f4f6, #dbeafe);
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d6efd, #6f42c1);
+      color: white;
+      padding: 2rem;
+      border-radius: 15px;
+      animation: fadeInDown 1s ease;
+    }
+
+    .card {
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container py-5">
+
+    <!-- Header -->
+    <header class="text-center mb-5 shadow">
+      <h1 class="display-5 fw-bold"><i class="bi bi-folder-check me-2"></i>My Projects</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="d-flex justify-content-center flex-wrap gap-3 mb-5">
+      <a href="index.html" class="btn btn-outline-light bg-primary text-white"><i class="bi bi-house-door"></i> Home</a>
+      <a href="about.html" class="btn btn-outline-light bg-info text-dark"><i class="bi bi-person"></i> About</a>
+      <a href="skills.html" class="btn btn-outline-light bg-success text-white"><i class="bi bi-tools"></i> Skills</a>
+      <a href="contact.html" class="btn btn-outline-light bg-warning text-dark"><i class="bi bi-envelope"></i> Contact</a>
+    </nav>
+
+    <!-- Projects -->
+    <section class="mb-4">
+      <div class="card bg-white shadow-sm p-4 mb-4">
+        <h4 class="mb-3 text-primary"><i class="bi bi-code-slash me-2"></i>Project Work</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Trivia Game using AWS
+            <span class="badge bg-dark">EC2</span>
+            <span class="badge bg-secondary">S3</span>
+            <span class="badge bg-info text-dark">RDS</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Voice-Controlled Portfolio Website
+            <span class="badge bg-success">JavaScript</span>
+            <span class="badge bg-primary">Voice API</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Hotel Management System
+            <span class="badge bg-danger">MySQL</span>
+            <span class="badge bg-secondary">DBMS</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Internships & Certifications -->
+    <section class="mb-4">
+      <div class="card bg-white shadow-sm p-4 mb-4">
+        <h4 class="mb-3 text-success"><i class="bi bi-mortarboard-fill me-2"></i>Internships & Certifications</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Internship:</strong> Cloud + DevOps Internship <span class="badge bg-info text-dark">AWS</span>
+          </li>
+          <li class="list-group-item">
+            <strong>Certifications:</strong>
+            <ul class="mb-0">
+              <li>Python – <em>Great Learning</em> <span class="badge bg-primary">Python</span></li>
+              <li>AI Tools & ChatGPT – <em>Be10x</em> <span class="badge bg-dark">AI</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Academic Knowledge -->
+    <section>
+      <div class="card bg-white shadow-sm p-4 mb-4">
+        <h4 class="mb-3 text-warning"><i class="bi bi-journal-code me-2"></i>Academic & Core Knowledge</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Data Structures and Algorithms</li>
+          <li class="list-group-item">Object-Oriented Programming (OOP)</li>
+          <li class="list-group-item">Database Management Systems (DBMS)</li>
+          <li class="list-group-item">Operating Systems</li>
+          <li class="list-group-item">Computer Networks</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
